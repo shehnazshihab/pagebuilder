@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+.droppable-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px; 
+}
+
+
+.sidebar {
+  width: 250px;
+  background-color: #333333;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  height: 100%;
+}
+
+.droppable-area {
+  flex: 1;
+  padding: 20px;
+  background-color: #d1d0d0;
+  height: 100%;
+  overflow-y: auto;
+  border-left: 1px solid #FFFFFF;
+  color:#1d1c1c
+}
+
+.button {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #CCCCCC;
+}
+
+.save-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.delete-button {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.delete-button:hover {
+  background-color: #CCCCCC;
+}
+
+.draggable-item {
+  padding: 10px;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 10px;
+  background-color: #333333;
+  color: #FFFFFF;
+  cursor: grab;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+}
+
+.draggable-item:hover {
+  background-color: #444444;
+}
+
+.droppable-item {
+  padding: 10px;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 10px;
+  background-color: #c6c4c4;
+  color: #FFFFFF;
+  position: relative;
+  border-radius: 3px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: #bcbaba;
+  padding: 10px;
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  color: #2e2c2c;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #FFFFFF;
+  margin: 20px 0;
+}
+
+.editable-text,
+.editable-input {
+  border: 1px solid #FFFFFF;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #828181;
+  color: #1d1c1c;
+  margin: 5px 0;
+}
+
+.editable-input {
+  width: calc(100% - 20px);
+  padding: 8px;
+}
